@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arribason.geometrictranducer.Dialogs.ConvertDController">
+   <children>
+      <Label layoutX="14.0" layoutY="40.0" text="Поворот" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="angle" layoutX="101.0" layoutY="34.0" prefHeight="32.0" prefWidth="62.0" text="0,0" AnchorPane.leftAnchor="101.0" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="turnA11" editable="false" layoutX="294.0" layoutY="20.0" prefHeight="22.0" prefWidth="80.0" text="cos(0)" AnchorPane.leftAnchor="294.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="turnA12" editable="false" layoutX="374.0" layoutY="20.0" prefHeight="22.0" prefWidth="80.0" text="sin(0)" AnchorPane.leftAnchor="374.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="turnA21" editable="false" layoutX="294.0" layoutY="50.0" prefHeight="22.0" prefWidth="80.0" text="-sin(0)" AnchorPane.leftAnchor="294.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="turnA22" editable="false" layoutX="374.0" layoutY="50.0" prefHeight="22.0" prefWidth="80.0" text="cos(0)" AnchorPane.leftAnchor="374.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="ok" layoutX="455.0" layoutY="314.0" mnemonicParsing="false" text="OK" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="cancel" layoutX="14.0" layoutY="318.0" mnemonicParsing="false" text="Отмена" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="refA11" editable="false" layoutX="250.0" layoutY="127.0" prefHeight="22.0" prefWidth="80.0" text="1" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="127.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="250.0" layoutY="159.0" prefHeight="22.0" prefWidth="80.0" text="0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="159.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="refA22" editable="false" layoutX="330.0" layoutY="159.0" prefHeight="22.0" prefWidth="80.0" text="1" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="159.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="330.0" layoutY="127.0" prefHeight="22.0" prefWidth="80.0" text="0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="127.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="reflectionX" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" text="Отражение по X" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="132.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="originX" layoutX="195.0" layoutY="20.0" prefHeight="22.0" prefWidth="80.0" text="0,0" AnchorPane.leftAnchor="195.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="originY" layoutX="195.0" layoutY="50.0" prefHeight="22.0" prefWidth="80.0" text="0,0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="reflectionY" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" text="Отражение по Y" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="164.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="13.0" layoutY="197.0" text="Перемещение" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="197.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="moveX" layoutX="250.0" layoutY="191.0" prefHeight="22.0" prefWidth="80.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="moveY" layoutX="330.0" layoutY="191.0" prefHeight="22.0" prefWidth="80.0" text="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="410.0" layoutY="191.0" prefHeight="22.0" prefWidth="80.0" text="1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="410.0" layoutY="127.0" prefHeight="22.0" prefWidth="80.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="410.0" layoutY="159.0" prefHeight="22.0" prefWidth="80.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="10.0" layoutY="304.0" text="Маштабирование" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="304.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="scaleX" layoutX="290.0" layoutY="282.0" prefHeight="22.0" prefWidth="80.0" text="1" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="282.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="370.0" layoutY="282.0" prefHeight="22.0" prefWidth="80.0" text="0" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="282.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="scaleY" layoutX="370.0" layoutY="314.0" prefHeight="22.0" prefWidth="80.0" text="1" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="314.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="290.0" layoutY="314.0" prefHeight="22.0" prefWidth="80.0" text="0" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="314.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="originX1" layoutX="195.0" layoutY="282.0" prefHeight="22.0" prefWidth="80.0" text="0,0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="originY1" layoutX="195.0" layoutY="314.0" prefHeight="22.0" prefWidth="80.0" text="0,0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
