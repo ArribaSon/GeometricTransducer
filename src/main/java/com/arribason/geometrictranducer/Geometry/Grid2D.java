@@ -1,6 +1,5 @@
 package com.arribason.geometrictranducer.Geometry;
 
-import com.arribason.geometrictranducer.Geometry.GObject2D;
 import javafx.scene.Group;
 import javafx.scene.SubScene;
 import javafx.scene.paint.Color;
@@ -10,7 +9,6 @@ public class Grid2D extends GObject2D {
     private final Line axisX;
     private final Line axisY;
     private final SubScene subScene;
-    private int h = 50;
 
     Grid2D(SubScene subScene, Group group) {
         //Инициализация
@@ -45,6 +43,6 @@ public class Grid2D extends GObject2D {
     }
 
     public int getH() {
-        return h;
+        return 50;
     }
 }

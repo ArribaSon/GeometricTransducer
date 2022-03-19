@@ -1,7 +1,5 @@
 package com.arribason.geometrictranducer.Geometry;
 
-import javafx.scene.SubScene;
-
 import java.util.LinkedList;
 import java.util.List;
 

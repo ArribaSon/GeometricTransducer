@@ -3,44 +3,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arribason.geometrictranducer.GTController">
-   <children>
-      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="Приложение">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Справка">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#about" text="О программе" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-      <TabPane layoutY="24.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
-        <tabs>
-          <Tab text="Lab1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <SplitPane dividerPositions="0.37" layoutX="-6.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                          <items>
-                            <AnchorPane fx:id="lab1_scene2dRoot1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
-                            <AnchorPane fx:id="lab1_scene2dRoot2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
-                          </items>
-                        </SplitPane>
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="La2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-        </tabs>
-      </TabPane>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.arribason.geometrictranducer.GTController">
+    <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Menu mnemonicParsing="false" text="Приложение">
+            <MenuItem mnemonicParsing="false" onAction="#close" text="Выход"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Справка">
+            <MenuItem mnemonicParsing="false" onAction="#about" text="О программе"/>
+        </Menu>
+    </MenuBar>
+    <TabPane layoutY="24.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE"
+             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+             AnchorPane.topAnchor="24.0">
+        <Tab text="Lab1">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <SplitPane dividerPositions="0.37" layoutX="-6.0" prefHeight="160.0" prefWidth="200.0"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <AnchorPane fx:id="lab1_scene2dRoot1" minHeight="0.0" minWidth="0.0"
+                                prefHeight="160.0" prefWidth="100.0"/>
+                    <AnchorPane fx:id="lab1_scene2dRoot2" minHeight="0.0" minWidth="0.0"
+                                prefHeight="160.0" prefWidth="100.0"/>
+                </SplitPane>
+            </AnchorPane>
+        </Tab>
+        <Tab text="La2">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+    </TabPane>
 </AnchorPane>

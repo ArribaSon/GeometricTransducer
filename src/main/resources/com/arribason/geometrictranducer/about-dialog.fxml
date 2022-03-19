@@ -4,11 +4,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arribason.geometrictranducer.Dialogs.AboutDController">
-   <children>
-      <TextArea fx:id="aboutText" editable="false" layoutX="63.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
-         <font>
-            <Font size="16.0" />
-         </font></TextArea>
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.arribason.geometrictranducer.Dialogs.AboutDController">
+   <TextArea fx:id="aboutText" editable="false" layoutX="63.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0"
+             AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+             AnchorPane.topAnchor="10.0">
+      <font>
+         <Font size="12.0"/>
+      </font>
+   </TextArea>
 </AnchorPane>

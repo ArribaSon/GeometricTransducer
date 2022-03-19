@@ -25,7 +25,10 @@ public class AboutDialog {
         aboutDController.getAboutText().setText("""
                 GeometricTransducer v1
                 Программу выполнили: Чистяков Константин и Вадим Кагарманов студенты группы ЕТ-311
-                Исходный код: 
+                Исходный код: https://github.com/ArribaSon/GeometricTransducer
+                Перподователь: Акимова Алена Андреевна
+                               кандидат физико-математических наук
+                               доцент кафедры математического и компьютерного моделирования
                 """);
         stage.showAndWait();
     }

@@ -2,13 +2,8 @@ package com.arribason.geometrictranducer.Dialogs;
 
 import com.arribason.geometrictranducer.GeometricTransducer;
 import com.arribason.geometrictranducer.Geometry.Polygon;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -92,20 +87,18 @@ public class ConvertDialog {
                     nx[i] += dx;
                     ny[i] += dy;
                     //Маштабирование
-                    nx[i] = (nx[i] - originX) * sx;
+                    nx[i] = (nx[i] - originX1) * sx;
                     nx[i] += originX;
-                    ny[i] = (ny[i] - originY) * sy;
+                    ny[i] = (ny[i] - originY1) * sy;
                     ny[i] += originY;
                 }
                 polygon.setVertexes(nx, ny);
                 stage.close();
-            } catch (Exception e) {
+            } catch (Exception ignored) {
 
             }
         });
-        convertDController.getCancel().setOnAction(actionEvent -> {
-            stage.close();
-        });
+        convertDController.getCancel().setOnAction(actionEvent -> stage.close());
         stage.showAndWait();
     }
 }
