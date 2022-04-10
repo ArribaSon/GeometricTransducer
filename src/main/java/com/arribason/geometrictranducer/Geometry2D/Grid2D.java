@@ -1,4 +1,4 @@
-package com.arribason.geometrictranducer.Geometry;
+package com.arribason.geometrictranducer.Geometry2D;
 
 import javafx.scene.Group;
 import javafx.scene.SubScene;
@@ -9,6 +9,7 @@ public class Grid2D extends GObject2D {
     private final Line axisX;
     private final Line axisY;
     private final SubScene subScene;
+
 
     Grid2D(SubScene subScene, Group group) {
         //Инициализация

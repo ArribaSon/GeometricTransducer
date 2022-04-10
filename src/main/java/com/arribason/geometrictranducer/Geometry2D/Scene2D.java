@@ -1,4 +1,4 @@
-package com.arribason.geometrictranducer.Geometry;
+package com.arribason.geometrictranducer.Geometry2D;
 
 import com.arribason.geometrictranducer.Dialogs.ConvertDialog;
 import com.arribason.geometrictranducer.Dialogs.NewPolygonDialog;
@@ -24,7 +24,7 @@ public class Scene2D {
     private final SubScene scene;
     private final AnchorPane root1;
     private final Grid2D grid2D;
-    private final MyCamera camera;
+    private final MyCamera2D camera;
     private final Group group;
 
     private Label info;
@@ -51,7 +51,7 @@ public class Scene2D {
         root2.getChildren().add(scene);
 
         //MyCamera
-        camera = new MyCamera();
+        camera = new MyCamera2D();
 
         //Grid 2D
         grid2D = new Grid2D(scene, group);

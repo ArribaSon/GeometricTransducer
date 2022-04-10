@@ -1,7 +1,7 @@
 package com.arribason.geometrictranducer.Dialogs;
 
 import com.arribason.geometrictranducer.GeometricTransducer;
-import com.arribason.geometrictranducer.Geometry.Polygon;
+import com.arribason.geometrictranducer.Geometry2D.Polygon;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;

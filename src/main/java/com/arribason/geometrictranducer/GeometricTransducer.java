@@ -20,6 +20,7 @@ public class GeometricTransducer extends Application {
 
         gtController = fxmlLoader.getController();
         gtController.createLab1Scene();
+        gtController.createLab2Scene();
     }
 
     public static void main(String[] args) {

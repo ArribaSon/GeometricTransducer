@@ -1,15 +1,15 @@
-package com.arribason.geometrictranducer.Geometry;
+package com.arribason.geometrictranducer.Geometry2D;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class MyCamera {
+public class MyCamera2D {
 
     private int x = 0;
     private int y = 0;
     private final List<GObject2D> gObject2DList;
 
-    MyCamera() {
+    MyCamera2D() {
 
         gObject2DList = new LinkedList<>();
     }

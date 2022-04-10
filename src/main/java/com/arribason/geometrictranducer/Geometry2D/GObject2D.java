@@ -1,4 +1,4 @@
-package com.arribason.geometrictranducer.Geometry;
+package com.arribason.geometrictranducer.Geometry2D;
 
 public abstract class GObject2D {
 

@@ -14,6 +14,6 @@ module com.arribason.geometrictranducer {
     exports com.arribason.geometrictranducer;
     exports com.arribason.geometrictranducer.Dialogs;
     opens com.arribason.geometrictranducer.Dialogs to javafx.fxml;
-    exports com.arribason.geometrictranducer.Geometry;
-    opens com.arribason.geometrictranducer.Geometry to javafx.fxml;
+    exports com.arribason.geometrictranducer.Geometry2D;
+    opens com.arribason.geometrictranducer.Geometry2D to javafx.fxml;
 }

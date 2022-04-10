@@ -1,4 +1,4 @@
-package com.arribason.geometrictranducer.Geometry;
+package com.arribason.geometrictranducer.Geometry2D;
 
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
